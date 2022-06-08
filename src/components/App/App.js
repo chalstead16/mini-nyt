@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import getArticles from '../../apiCalls';
+import Header from '../Header/Header';
 import './App.css';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header />
     </div>
   );
 }
