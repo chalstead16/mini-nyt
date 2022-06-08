@@ -1,5 +1,6 @@
 import React from 'react';
 import ArticleCard from '../ArticleCard/ArticleCard';
+import './AllArticles.css';
 
 const AllArticles = ({ articles }) => {
   let counter = 0
