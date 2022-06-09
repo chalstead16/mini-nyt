@@ -18,13 +18,13 @@ const App = () => {
     })
   }, [])
 
-  const filteredArticles = articles.filter(article => article.title.toLowerCase().includes(search) || article.title.includes(search));
+  const filteredArticles = articles.filter(article => article.title.toLowerCase().includes(search.toLowerCase()));
 
-  return (
+   return (
     <div className="App">
       <Header />
       <Form search={ search } setSearch={ setSearch }/>
-      <AllArticles articles={ articles }/>
+      <AllArticles articles={ filteredArticles }/>
     </div>
   );
 }
