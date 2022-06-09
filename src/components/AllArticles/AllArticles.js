@@ -3,7 +3,6 @@ import ArticleCard from '../ArticleCard/ArticleCard';
 import './AllArticles.css';
 
 const AllArticles = ({ articles }) => {
-  console.log(articles)
   let counter = 0
   const articlesData = articles.map( article => {
     counter += 1
