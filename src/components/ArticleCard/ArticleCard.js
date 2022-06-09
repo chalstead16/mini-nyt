@@ -1,11 +1,12 @@
 import React from "react";
 import './ArticleCard.css';
 
-const ArticleCard = ({ title, byline, abstract, multimedia }) => {
+const ArticleCard = ({ article, title, byline, abstract, multimedia, openModal }) => {
   let image = multimedia ? <img src={multimedia[2].url} alt={multimedia[2].caption} /> : null
   
   return (
-    <div className='article-card'>
+    <div className='article-card'
+    onClick={() => {openModal(article)}}>
       {image}
       <h2>{title}</h2>
       <h3>{byline}</h3>
