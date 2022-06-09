@@ -13,7 +13,7 @@ const Form = ({ search, setSearch }) => {
       type='search'
       placeholder='serach articles'
       value={search}
-      onChange={(event) => {handleSearch(event.target.value)}}/>
+      onChange={handleSearch}/>
     </form>
   )
 }
