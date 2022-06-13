@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import getArticles from '../../apiCalls';
 import Header from '../Header/Header';
 import Form from '../Form/Form';
 import AllArticles from '../AllArticles/AllArticles';
 import SingleArticle from '../SingleArticle/SingleArticle';
+import Footer from '../Footer/Footer';
+import Error404 from '../Error404/Error404';
 import './App.css';
 
 const App = () => {
@@ -34,13 +36,24 @@ const App = () => {
       <Header />
       <Form search={ search } setSearch={ setSearch }/>
       <Routes>
-        <Route exact path='/' element={<AllArticles articles={ filteredArticles } openModal={openModal}/>}/>
-        <Route exact path='/:id' element={<SingleArticle 
-          showModal={showModal} 
-          setShowModal={setShowModal}
-          selectArticle={selectArticle}
-          />}/>
+        <Route path='/' 
+          element={
+          <AllArticles 
+            articles={ filteredArticles }
+            openModal={openModal}/>
+          }
+        />
+        <Route path='/article:id' 
+          element={
+            <SingleArticle 
+              showModal={showModal} 
+              setShowModal={setShowModal}
+              selectArticle={selectArticle}/>
+          }
+        />
+        <Route path='*' element={<Error404 />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
