@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Form from '../Form/Form';
 import AllArticles from '../AllArticles/AllArticles';
 import SingleArticle from '../SingleArticle/SingleArticle';
+import Footer from '../Footer/Footer';
 import Error404 from '../Error404/Error404';
 import './App.css';
 
@@ -52,6 +53,7 @@ const App = () => {
         />
         <Route path='*' element={<Error404 />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
