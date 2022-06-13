@@ -67,3 +67,6 @@ By storing the API key in a `.env` file as an environment variable, and adding t
 - GitHub Projects & Issues
 - Ezgif
 - [NYT API](https://developer.nytimes.com/docs/top-stories-product/1/overview)
+
+## Contributors
+[Casey Halstead](https://terminal.turing.edu/alumni/1324-casey-halstead)
