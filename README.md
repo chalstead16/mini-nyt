@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# mini-nyt 📰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/91504411/173289622-0ca7b52f-e3a0-4fc6-8f52-5118e6de3080.gif)
 
-In the project directory, you can run:
+mini-nyt is a mock take home challenge assigned in the final module in Turing School of Software & Design. mini-nyt consumes 'Top Stories' API from the New York Times(NYT).
 
-### `npm start`
+## Endpoints
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+As the app loads, the data is fetched using a GET request to the Top Stories API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Example Endpoint
 
-### `npm test`
+`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=yourkey`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### API Key
 
-### `npm run build`
+An API key is required by NYT to consume their APIs. The instructions are found here. Once a key has been created, the app was registered to authenticate access.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+By storing the API key in a `.env` file as an environment variable, and adding that file to the `.gitignore` file, I was able to hide the API key.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Management Tools
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Kanban process via [GitHub Projects & Issues](https://github.com/chalstead16/mini-nyt/projects/1)
 
-### `npm run eject`
+- Wireframe and Component Structure via [Figma](https://www.figma.com/file/CNfudFaYACVvi0yK7T7Lyb/mini-nyt?node-id=0%3A1) 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screen Shot 2022-06-13 at 1 01 06 AM](https://user-images.githubusercontent.com/91504411/173289478-861aa866-1f0e-49c8-a642-7cd0fb17e8f2.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Screen Shot 2022-06-13 at 1 00 26 AM](https://user-images.githubusercontent.com/91504411/173289428-932dd89e-d78f-4711-903c-5df21cf60856.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Learning Goals
+- React.js Fundamentals
+- Front-End best practices
+- Prioritization of MVP
+- Basic usability practices & standards
+- Clear heirarchy of information
+- Asynchronous JavaScript
+- React Router (v6)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Getting Started
+1. Clone the repo down to your machine
+`$git clone git@github.com:chalstead16/mini-nyt.git`
+2. Open the root directory and install dependencies
+`$cd mini-nyt`
+`$npm i`
+3. Start the server to view the app in the browser - the app will run on http://localhost:3000
+`$npm start`
 
-## Learn More
+## Future Additions
+- End-to-End Testing with Cypress
+- Favoriting functionality for articles
+- Error Handling for no matching searches
+- Responsive design for mobile
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used
+- React.js
+- React Router v6
+- JavaScript
+- HTML
+- CSS
+- React Dev Tools (Chrome Extension)
+- Visual Studio Code
+- Figma
+- GitHub
+- GitHub Projects & Issues
+- Ezgif
+- [NYT API](https://developer.nytimes.com/docs/top-stories-product/1/overview)
